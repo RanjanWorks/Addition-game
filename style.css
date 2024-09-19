@@ -194,15 +194,13 @@ dialog {
   }
 
   dialog::backdrop {
-    background: rgba(0, 0, 0, 0.76);
+    background: rgb(0, 0, 0);
   }
 
   dialog {
     width: 100%;
     height: auto;
     border-radius: 0;
-    border-top: 5px solid var(--accent);
-    border-bottom: 5px solid var(--accent);
     .mode-container {
       form {
         justify-content: flex-start;
