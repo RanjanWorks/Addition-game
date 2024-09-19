@@ -34,7 +34,8 @@ function getRandomNumber(digits) {
   }
 }
 function renderRandomNumber(digitChoice) {
-  newQueSound.play()
+  newQueSound.play();
+  answerInput.focus();
   randomNumber1 = getRandomNumber(digitChoice);
   randomNumber2 = getRandomNumber(digitChoice);
 
@@ -90,10 +91,10 @@ function incorrect() {
       confettiNumber: 70,
     })
     .then(() => {
-      confirm('Correct answer is: ' + answer);
+      confirm("Correct answer is: " + answer);
+      scoreOutput.innerHTML = score;
       renderRandomNumber(digit);
       clearInputValue();
-      scoreOutput.innerHTML = score;
     });
   if (score <= 0) {
     score = 0;
@@ -122,4 +123,4 @@ function openModal() {
   popup.showModal();
 }
 
-openModal()
+openModal();
