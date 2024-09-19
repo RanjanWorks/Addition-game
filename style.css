@@ -194,7 +194,7 @@ dialog {
   }
 
   dialog::backdrop {
-    background: rgb(0, 0, 0);
+    background: #000000bb;
   }
 
   dialog {
@@ -205,6 +205,11 @@ dialog {
       form {
         justify-content: flex-start;
       }
+    }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
   :root {
