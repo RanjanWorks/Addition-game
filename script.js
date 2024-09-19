@@ -121,3 +121,5 @@ function closeModal() {
 function openModal() {
   popup.showModal();
 }
+
+openModal()
